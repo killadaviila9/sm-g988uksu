@@ -1,0 +1,12 @@
+{
+  "name": "KernelSU Build Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "onCreateCommand": "sudo apt update && sudo apt install -y build-essential bc bison flex libssl-dev libncurses5-dev git curl zip unzip ccache python3 libelf-dev aarch64-linux-gnu-gcc",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}
